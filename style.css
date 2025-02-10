@@ -1,0 +1,385 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f4efe4;
+  overflow-x: hidden;
+  font-family: "Fredoka", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+@keyframes opacity-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opacity-animation-1-to-0 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes opacity-animation-with-scale {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes translate-left-to-right {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes translate-right-to-left {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.slider001 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+  /* margin-top: 50px; */
+  width: 100%;
+  overflow: hidden;
+  /* background: rgb(255, 255, 255); */
+  /* border-radius: 16px; */
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  /* backdrop-filter: blur(7.4px); */
+  /* -webkit-backdrop-filter: blur(7.4px); */
+  /* border: 1px solid rgba(255, 255, 255, 0.4); */
+}
+.slider-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation: scrolling 20s linear infinite;
+  opacity: 40%;
+}
+@keyframes scrolling {
+  0% {
+    transform: translateX(80%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}
+.slider-items img {
+  width: 100%;
+}
+.scroll-down-downloadcv-2025-buttons-animation {
+  animation-name: opacity-animation-1-to-0;
+  animation-timeline: view();
+  animation-range: entry 70% cover 100%;
+}
+
+.Home {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+  height: 100vh;
+  background-size: 4px 4px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      transparent 0.6px
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 0.6px);
+}
+/* about section */
+
+.github-and-behance-button {
+  animation-name: opacity-animation;
+  animation-timeline: view();
+  animation-range: entry 40% cover 30%;
+}
+
+/* text scroll */
+.scroll-element-box {
+  display: block;
+  overflow: hidden;
+  height: 150px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 9px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 1;
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+.scroll-element-box {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 forward 40%;
+}
+
+.scroll-text {
+  margin-top: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Comfortaa", serif;
+  font-size: 60px;
+  /* font-weight: bolder; */
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+
+@keyframes textslide {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
+.scroll-text {
+  animation: textslide linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 100%;
+}
+
+.projects-box {
+  animation-name: translate-left-to-right;
+  animation-timeline: view();
+  animation-range: entry 0 cover 80%;
+}
+@keyframes hrafterarrow {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+.horizontal-line-after-arrow {
+  animation-name: hrafterarrow;
+  animation-timeline: view();
+  animation-range: entry 0 cover 80%;
+}
+
+.table-noidea {
+  animation-name: opacity-animation;
+  animation-timeline: view();
+  animation-range: entry 0 cover 80%;
+}
+
+.mobile-view-table-animation {
+  animation-name: opacity-animation-with-scale;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+}
+
+/* figma svg icon changing image */
+.figma-icon-container .hover-img {
+  position: absolute;
+  opacity: 0;
+}
+.figma-icon-container:hover .hover-img {
+  opacity: 1;
+}
+.figma-icon-container:hover .default-img {
+  opacity: 0;
+}
+
+.figma-icon-container .project-tooltip-popup {
+  position: absolute;
+  opacity: 0;
+}
+.figma-icon-container:hover .project-tooltip-popup {
+  opacity: 1;
+}
+@media (max-width: 640px) {
+  .project-tooltip-popup {
+    display: none;
+  }
+}
+
+.project-grid-animation {
+  animation-name: opacity-animation-with-scale;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+}
+.project-skillset-hours-animation {
+  animation-name: psh-animation;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+@keyframes psh-animation {
+  from {
+    clip-path: inset(100% 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.demo-animation-for-icon-slider-l-t-r {
+  animation-name: dafis-animation-left-to-right;
+  animation-timeline: view();
+  animation-range: entry 0 cover 100%;
+}
+@keyframes dafis-animation-left-to-right {
+  from {
+    transform: translateX(2%);
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
+.demo-animation-for-icon-slider-r-t-l {
+  animation-name: dafis-animation-right-to-left;
+  animation-timeline: view();
+  animation-range: entry 0 cover 100%;
+}
+@keyframes dafis-animation-right-to-left {
+  from {
+    transform: translateX(-30%);
+  }
+  to {
+    transform: translateX(2%);
+  }
+}
+
+.timeline {
+  margin: 5em auto;
+  max-width: 34.15em;
+}
+.checkpoint {
+  max-width: 34.2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  position: relative;
+}
+.checkpoint div {
+  border: 2px solid #888;
+  border-radius: 1em;
+  padding: 1.5em;
+}
+.checkpoint:nth-child(odd) {
+  border-left: 3px solid #888;
+  padding: 3em;
+  transform: translateX(17em);
+}
+.checkpoint:nth-child(even) {
+  border-right: 3px solid #888;
+  padding: 3em;
+  transform: translateX(-17em);
+}
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before {
+  content: "";
+  background: #888;
+  width: 3em;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.checkpoint:nth-child(odd)::before {
+  left: 0;
+}
+.checkpoint:nth-child(even)::before {
+  right: 0;
+}
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before {
+  content: "";
+  background: #fff;
+  box-shadow: 0 0 0.5em #0d71fc;
+  width: 0.8em;
+  height: 0.8em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.checkpoint:nth-child(odd) div::before {
+  left: -0.5em;
+}
+.checkpoint:nth-child(even) div::before {
+  right: -0.5em;
+}
+@media screen and (max-width: 1150px) {
+  .timeline {
+    width: 80vw;
+  }
+  .timeline .checkpoint {
+    width: 100%;
+    transform: none;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+  }
+  .timeline .checkpoint::before {
+    width: 3px;
+    height: 6em;
+    top: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .timeline .checkpoint div::before {
+    top: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.checkpoint div {
+  animation-name: opacity-animation-with-scale;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+}
+.timeline .checkpoint::before {
+  animation-name: opacity-animation-with-scale;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
+}
+
+.Contactform1 .fa-cog {
+  position: absolute;
+  font-size: 500px;
+  opacity: 50%;
+  animation: rotate 10s linear infinite;
+}
+.Contactform1 .nut1 {
+  top: 10%;
+  left: -15rem;
+}
+.Contactform1 .nut2 {
+  bottom: 23%;
+  right: -13rem;
+  animation-direction: reverse;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

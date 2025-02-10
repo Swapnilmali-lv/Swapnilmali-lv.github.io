@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="myscript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fredoka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="">
+    <!-- navbar section start-->
+  <header>
+
+
+    <nav class="flex justify-between items-center mx-4 mt-4 bg-white shadow-xl rounded-lg z-50 fixed w-[93%] sm:w-[98%]">
+      <a href="#Home">
+      <div class="rounded-2xl p-2">
+        <img src="images/logo.svg" alt="" />
+      </div>
+      </a>
+
+      <div class="">
+        <ul class="sm:mr-3 sm:gap-4 gap-2 sm:flex sm:items-center z-[-1] sm:z-auto sm:static absolute bg-white rounded-lg w-[100%] left-0 sm:py-0 py-8 sm:opacity-100 opacity-0 top-[-400px] transition-all ease-in">
+          <li class="mx-4 sm:mx-0 my-6 sm:my-0 flex justify-center"><a
+            href="#Home"
+            class="transition ease-in-out rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-black hover:text-white duration-500"
+            aria-current="page"
+            >Home</a></li>
+          <li class="mx-4 sm:mx-0 my-6 sm:my-0 flex justify-center"><a
+            href="#About"
+            class="transition ease-in-out rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-black hover:text-white duration-500"
+            >About</a></li>
+          <li class="mx-4 sm:mx-0 my-6 sm:my-0 flex justify-center"><a
+            href="#Projects"
+            class="transition ease-in-out rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-black hover:text-white duration-500"
+            >Projects</a></li>
+          <li class="mx-4 sm:mx-0 my-6 sm:my-0 flex justify-center"><a
+            href="#TimeStamp"
+            class="transition ease-in-out rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-black hover:text-white duration-500"
+            >TimeLine</a></li>
+          <li class="mx-4 sm:mx-0 my-6 sm:my-0 flex justify-center"><a
+            href="#ContactForm"
+            class="transition ease-in-out rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-black hover:text-white duration-500"
+            >Contact</a></li>
+        </ul>
+      </div>
+      
+      
+      <button class="text-3xl mt-2 mr-4 cursor-pointer sm:hidden">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </button>
+      
+
+
+
+
+    </nav>
+   
+  </header>
+    <!-- navbar section end -->
+
+
+    <!-- Home section start -->
+    <section class="Home" id="Home"> <!--height is set as 100vh-->
+
+      <div class="absolute bottom-0 w-full">
+        <div class="max-w-fit mr-auto ml-auto">
+        <img class="object-cover sm:h-[90vh] h-[70vh]" src="images/homepic4.png" alt="">
+        </div>
+      <div class="grid sm:grid-cols-12 gap-1 bg-[#f4efe4] grid-flow-col">
+        <div class="bg-[#E4E9F4] sm:col-span-2 sm:row-span-1 flex sm:justify-center sm:items-center p-3 row-span-2">
+          <img class="scroll-down-downloadcv-2025-buttons-animation" src="images/scroll down.svg" alt=""></div>
+
+        <div class="bg-[#E4E9F4] sm:col-span-9 sm:justify-end flex sm:items-center p-3">
+          <a href="CV/Swapnil mali resume.pdf" download=""><button type="button" class="scroll-down-downloadcv-2025-buttons-animation text-gray-900 bg-white border border-gray-400 focus:outline-none hover:bg-gray-100 font-medium rounded-xl text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 sm:mr-5">Download CV</button></a></div>
+
+        <div class="bg-[#E4E9F4] sm:col-span-1 flex sm:justify-center sm:items-center p-2">
+          <a href="#ContactForm"><button type="button" class="scroll-down-downloadcv-2025-buttons-animation text-gray-900 bg-white border border-gray-400 focus:outline-none hover:bg-gray-100 font-medium rounded-xl text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 ml-1">Hire me!</button></a></div>
+      
+      </div>
+        
+        <div class="slider001 absolute inset-0 -z-10">
+          <div class="slider-items w-screen">
+            <img class="object-none h-[500px]" src="images/Div.svg" alt="" />
+            <img class="object-none h-[500px]" src="images/Div.svg" alt="" />
+            <img class="object-none h-[500px]" src="images/Div.svg" alt="" />
+            <img class="object-none h-[500px]" src="images/Div.svg" alt="" />
+            <img class="object-none h-[500px]" src="images/Div.svg" alt="" />
+            <img class="object-none h-[500px]" src="images/Div.svg" alt="" />
+          </div>
+        </div>
+      </div>
+  </section>
+    <!-- Home section end -->
+
+
+    <!-- about sectio start -->
+     <section class="about h-auto" id="About">
+      <div class="grid grid-cols-1 sm:grid-cols-12 gap-1 m-0 sm:h-[100vh]">
+        <div class="min-h-[100px] bg-gray-950 sm:col-span-3">
+          <p class="text-white flex justify-center items-center m-6 sm:mt-52 font-extrabold text-4xl">About</p>
+        </div>
+        <div class="min-h-[100px] bg-gray-950 sm:col-span-9">
+          <p class="text-white flex m-6 sm:mt-52">
+            Swapnil Mali, I’m a passionate Computer Science and Engineering student at Amravati University (2022-2025) with a strong foundation in programming, web development, and UI/UX design. I have hands-on experience working with HTML5, CSS3, Tailwind CSS, Bootstrap, JavaScript, MongoDB, and SQL, along with expertise in Figma and Adobe XD to create intuitive and user-friendly designs.</p>
+            <p class="text-white flex m-6">With a keen eye for detail and a creative mindset, I love building seamless digital experiences. I'm always eager to learn, innovate, and contribute to impactful projects in web development, UI/UX design, and software engineering</p> 
+            <p class="text-white flex m-6">Let’s connect and make something amazing together!</p>
+            
+            <div class="github-and-behance-button flex">
+            <button type="button" class="text-white p-2 m-6 border border-white rounded-lg flex justify-center items-center hover:bg-gray-800 hover:scale-110 duration-200 ease-in-out"><img class="mr-1" src="images/GithubIcon.svg" alt="">Github</button>
+            <a href="https://www.behance.net/swapnilmali7"><button type="button" class="text-white p-2 m-6 border border-white rounded-lg flex justify-center items-center hover:bg-gray-800 hover:scale-110 duration-200 ease-in-out"><img class="mr-1" src="images/BehanceIcon.svg" alt="">behance</button></a>
+            </div>
+
+        </div>
+      </div>
+  </section>
+    <!-- about section end -->
+
+
+
+    <!--Project section start-->
+
+  <section class="project h-auto" id="Projects">
+   
+    <div class="scroll-element sm:block md:block hidden">
+    <div class="scroll-element-box m-8">
+      <div class="scroll-text"><p>&#128208 Super &#x1F525 HTML &#128050 CSS &#128640 JavaScript &#128208 UI/UX &#128187 Tailwind </p></div>
+    </div>
+    </div>
+    
+    
+
+    <div class="projects-box flex pt-8 m-8">
+      <img class="h-[100px] w-[100px] hover:rotate-12" src="images/Curve Arrow.svg" alt="">
+      <h2 class="flex items-center text-5xl font-bold ml-7">Projects</h2>
+    </div>
+    <div class="flex w-full justify-center">
+    <hr class="horizontal-line-after-arrow h-[2px] m-8 w-full bg-gray-700 border-0 dark:bg-gray-700 opacity-60 rounded-full">
+  </div>
+<div class="sm:block hidden">
+  <table class="table-noidea table-auto m-8 sm:mb-[150px] sm:w-[60%]">
+    <tr class="text-left font-semibold">
+      <td class="pb-6 hover:text-[#ff623f] duration-500 ease-in-out cursor-pointer hover:text-5xl">TIMEFRAME</td>
+      <td class="pb-6 hover:text-[#3F7CFF] duration-500 ease-in-out cursor-pointer hover:text-5xl">DICIPLINE</td>
+      <td class="pb-6 hover:text-[#3FDCFF] duration-500 ease-in-out cursor-pointer hover:text-5xl">TOOLS</td>
+      <td class="pb-6 hover:text-[#41d83f] duration-500 ease-in-out cursor-pointer hover:text-5xl">SKILLSETS</td>
+    </tr>
+    <tr class="text-left">
+      <td class="hover:text-[#41d83f] hover:text-5xl duration-500 ease-in-out cursor-pointer">YEAR 2025</td>
+      <td class="hover:text-[#3F7CFF] hover:text-5xl duration-500 ease-in-out cursor-pointer">UI design</td>
+      <td class="hover:text-[#ff623f] hover:text-5xl duration-500 ease-in-out cursor-pointer">VS Code</td>
+      <td class="hover:text-[#41d83f] hover:text-5xl duration-500 ease-in-out cursor-pointer">HTML5</td>
+    </tr>
+    <tr class="text-left">
+      <td></td>
+      <td class="hover:text-[#3F7CFF] hover:text-5xl duration-500 ease-in-out cursor-pointer">UX reaserch</td>
+      <td class="hover:text-[#41d83f] hover:text-5xl duration-500 ease-in-out cursor-pointer">Figma</td>
+      <td class="hover:text-[#ff623f] hover:text-5xl duration-500 ease-in-out cursor-pointer">CSS3</td>
+      <td class="hover:text-[#3F7CFF] hover:text-5xl duration-500 ease-in-out cursor-pointer"></td>
+    </tr>
+    <tr class="text-left">
+      <td></td>
+      <td class="hover:text-[#41d83f] hover:text-5xl duration-500 ease-in-out cursor-pointer">No code development</td>
+      <td class="hover:text-[#ff623f] hover:text-5xl duration-500 ease-in-out cursor-pointer">Adobe Xd</td>
+      <td class="hover:text-[#3F7CFF] hover:text-5xl duration-500 ease-in-out cursor-pointer">Tailwind</td>
+    </tr>
+    <tr class="text-left">
+      <td></td>
+      <td class="hover:text-[#ff623f] hover:text-5xl duration-500 ease-in-out cursor-pointer">Web devlopment</td>
+      <td class="hover:text-[#3F7CFF] hover:text-5xl duration-500 ease-in-out cursor-pointer">Github</td>
+      <td class="hover:text-[#41d83f] hover:text-5xl duration-500 ease-in-out cursor-pointer">JavaScript</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="sm:hidden">
+<div class="mx-6 mb-20 grid grid-cols-2 gap-4">
+  <div class="mb-4"> 
+    <ul>
+    <li class="font-semibold mb-2 mobile-view-table-animation">TIMEFRAME</li>
+    <li class="mobile-view-table-animation">2025</li>
+    </ul>
+  </div>
+  <div> 
+    <ul>
+    <li class="font-semibold mb-2 mobile-view-table-animation">DICIPLINE</li>
+    <li class="mobile-view-table-animation">Ui design</li>
+    <li class="mobile-view-table-animation">Ux reaserch</li>
+    <li class="mobile-view-table-animation">No code development</li>
+    <li class="mobile-view-table-animation">Web development</li>
+    </ul>
+  </div>
+  <div> 
+    <ul>
+    <li class="font-semibold mb-2 mobile-view-table-animation">TOOLS</li>
+    <li class="mobile-view-table-animation">VS Code</li>
+    <li class="mobile-view-table-animation">Figma</li>
+    <li class="mobile-view-table-animation">Adobe Xd</li>
+    <li class="mobile-view-table-animation">Github</li>
+    </ul>
+  </div>
+  <div> 
+    <ul>
+    <li class="font-semibold mb-2 mobile-view-table-animation">SKILLSETS</li>
+    <li class="mobile-view-table-animation">HTML5</li>
+    <li class="mobile-view-table-animation">CSS3</li>
+    <li class="mobile-view-table-animation">Tailwind</li>
+    <li class="mobile-view-table-animation">JavaScript</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+
+<!-- projects divs -->
+<div class="sm:block hidden"> 
+<div class="project-grid-animation figma-icon-container flex items-center mx-8 sm:p-6 border-b-2 border-gray-700 border-opacity-60 hover:bg-black hover:text-white">
+    <img class="default-img h-[20px] w-[20px] ml-2" src="images/figma-logo.svg" alt="">
+    <img class="hover-img h-[20px] w-[20px] ml-2" src="images/figma-logo-white.svg" alt="">
+  <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
+  <div class="flex-grow"><div class="font-medium text-lg ml-4">Queen Elara - UX design, Landing Page development</div></div>
+  <div class="">
+    <button class="bg-slate-100  border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+  </div>
+  <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/1.jpg"></img>
+</div>
+
+<div class="project-grid-animation figma-icon-container flex items-center mx-8 sm:p-6 border-b-2 border-gray-700 border-opacity-60 hover:bg-black hover:text-white">
+    <img class="default-img h-[20px] w-[20px] ml-2" src="images/figma-logo.svg" alt="">
+    <img class="hover-img h-[20px] w-[20px] ml-2" src="images/figma-logo-white.svg" alt="">
+  <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
+  <div class="flex-grow"><div class="font-medium text-lg ml-4">Sectret Window - Concept landing Page</div></div>
+  <div class="">
+    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+  </div>
+  <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/2.jpg"></img>
+</div>
+
+<div class="project-grid-animation figma-icon-container flex items-center mx-8 sm:p-6 border-b-2 border-gray-700 border-opacity-60 hover:bg-black hover:text-white">
+    <img class="default-img h-[20px] w-[20px] ml-2" src="images/figma-logo.svg" alt="">
+    <img class="hover-img h-[20px] w-[20px] ml-2" src="images/figma-logo-white.svg" alt="">
+  <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
+  <div class="flex-grow"><div class="font-medium text-lg ml-4">404 error - UX design, Landing Page development</div></div>
+  <div class="">
+    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+  </div>
+  <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/3.jpg"></img>
+</div>
+
+<div class="project-grid-animation figma-icon-container flex items-center mx-8 sm:p-6 border-b-2 border-gray-700 border-opacity-60 hover:bg-black hover:text-white">
+    <img class="default-img h-[20px] w-[20px] ml-2" src="images/figma-logo.svg" alt="">
+    <img class="hover-img h-[20px] w-[20px] ml-2" src="images/figma-logo-white.svg" alt="">
+  <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
+  <div class="flex-grow"><div class="font-medium text-lg ml-4">Anime Streaming - Concept web development</div></div>
+  <div class="">
+    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+  </div>
+  <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/4.jpg"></img>
+</div>
+
+<div class="project-grid-animation figma-icon-container flex items-center mx-8 sm:p-6 border-b-2 border-gray-700 border-opacity-60 hover:bg-black hover:text-white">
+    <img class="default-img h-[20px] w-[20px] ml-2" src="images/figma-logo.svg" alt="">
+    <img class="hover-img h-[20px] w-[20px] ml-2" src="images/figma-logo-white.svg" alt="">
+  <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
+  <div class="flex-grow"><div class="font-medium text-lg ml-4">PortFolio - Concept web development</div></div>
+  <div class="">
+    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+  </div>
+  <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/5.jpg"></img>
+</div>
+
+<div class="project-grid-animation figma-icon-container flex items-center mx-8 sm:p-6 border-b-2 border-gray-700 border-opacity-60 hover:bg-black hover:text-white">
+    <img class="default-img h-[20px] w-[20px] ml-2" src="images/figma-logo.svg" alt="">
+    <img class="hover-img h-[20px] w-[20px] ml-2" src="images/figma-logo-white.svg" alt="">
+  <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
+  <div class="flex-grow"><div class="font-medium text-lg ml-4">3D Car Concept - UX design, 3D modeling</div></div>
+  <div class="">
+    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+  </div>
+  <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/6.jpg"></img>
+</div>
+
+<div class="project-grid-animation figma-icon-container flex items-center mx-8 sm:p-6 border-b-2 border-gray-700 border-opacity-60 hover:bg-black hover:text-white">
+    <img class="default-img h-[20px] w-[20px] ml-2" src="images/figma-logo.svg" alt="">
+    <img class="hover-img h-[20px] w-[20px] ml-2" src="images/figma-logo-white.svg" alt="">
+  <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
+  <div class="flex-grow"><div class="font-medium text-lg ml-4">Space Cat - Concept web development</div></div>
+  <div class="">
+    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+  </div>
+  <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/7.jpg"></img>
+</div>
+
+<div class="project-grid-animation figma-icon-container flex items-center mx-8 sm:p-6 border-b-2 border-gray-700 border-opacity-60 hover:bg-black hover:text-white mb-9">
+    <img class="default-img h-[20px] w-[20px] ml-2" src="images/figma-logo.svg" alt="">
+    <img class="hover-img h-[20px] w-[20px] ml-2" src="images/figma-logo-white.svg" alt="">
+  <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
+  <div class="flex-grow"><div class="font-medium text-lg ml-4">Maison Aura - UX design, Landing Page development</div></div>
+  <div class="">
+    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+  </div>
+  <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/8.jpg"></img>
+</div>
+</div>
+
+<!-- project div for mobile view -->
+ <div class="sm:hidden">
+  <div class="m-4 grid grid-cols-2 gap-4">
+    <div class="project-grid-animation"><img class="rounded-lg" src="images/projectsimages/1.jpg" alt=""></div>
+    <div class="project-grid-animation"><img class="rounded-lg" src="images/projectsimages/2.jpg" alt=""></div>
+    <div class="project-grid-animation"><img class="rounded-lg" src="images/projectsimages/3.jpg" alt=""></div>
+    <div class="project-grid-animation"><img class="rounded-lg" src="images/projectsimages/4.jpg" alt=""></div>
+    <div class="project-grid-animation"><img class="rounded-lg" src="images/projectsimages/5.jpg" alt=""></div>
+    <div class="project-grid-animation"><img class="rounded-lg" src="images/projectsimages/6.jpg" alt=""></div>
+  </div>
+  <div class="project-grid-animation flex justify-center items-center"> 
+  <a href="https://www.behance.net/swapnilmali7"><button class="px-2 py-2 bg-slate-100 border border-gray-700 rounded-lg text-black text-sm">More Projects</button></a></div>
+ </div>
+
+ <div class="py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+        <dt class="text-base/7 text-gray-600">Projects Completed</dt>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl project-skillset-hours-animation">21 + Projects</dd>
+      </div>
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+        <dt class="text-base/7 text-gray-600">Learned Skillsets</dt>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl project-skillset-hours-animation">9 + Skillsets</dd>
+      </div>
+      <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+        <dt class="text-base/7 text-gray-600">Working experience</dt>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl project-skillset-hours-animation">400 + hours</dd>
+      </div>
+    </dl>
+  </div>
+</div>
+
+<div class="mb-9 mt-20">   
+  <div class="flex items-center justify-between gap-20 opacity-[20%] demo-animation-for-icon-slider-l-t-r text-5xl">
+    <i class="fa fa-html5" aria-hidden="true"></i>
+    <i class="fa fa-css3" aria-hidden="true"></i>
+    <i class="fa fa-code" aria-hidden="true"></i>
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <i class="fa fa-behance" aria-hidden="true"></i>
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+    <i class="fa fa-font-awesome" aria-hidden="true"></i>
+    <i class="fa fa-html5" aria-hidden="true"></i>
+    <i class="fa fa-css3" aria-hidden="true"></i>
+    <i class="fa fa-code" aria-hidden="true"></i>
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <i class="fa fa-behance" aria-hidden="true"></i>
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+    <i class="fa fa-font-awesome" aria-hidden="true"></i>
+    <i class="fa fa-html5" aria-hidden="true"></i>
+    <i class="fa fa-css3" aria-hidden="true"></i>
+    <i class="fa fa-code" aria-hidden="true"></i>
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <i class="fa fa-behance" aria-hidden="true"></i>
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+    <i class="fa fa-font-awesome" aria-hidden="true"></i> 
+    <i class="fa fa-html5" aria-hidden="true"></i>
+    <i class="fa fa-css3" aria-hidden="true"></i>
+    <i class="fa fa-code" aria-hidden="true"></i>
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <i class="fa fa-behance" aria-hidden="true"></i>
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+    <i class="fa fa-font-awesome" aria-hidden="true"></i>
+  </div>
+</div>
+<div class="mb-9">
+  <div class="flex items-center justify-between gap-20 opacity-[20%] demo-animation-for-icon-slider-r-t-l text-5xl">
+    <i class="fa fa-html5" aria-hidden="true"></i>
+    <i class="fa fa-css3" aria-hidden="true"></i>
+    <i class="fa fa-code" aria-hidden="true"></i>
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <i class="fa fa-behance" aria-hidden="true"></i>
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+    <i class="fa fa-font-awesome" aria-hidden="true"></i>
+    <i class="fa fa-html5" aria-hidden="true"></i>
+    <i class="fa fa-css3" aria-hidden="true"></i>
+    <i class="fa fa-code" aria-hidden="true"></i>
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <i class="fa fa-behance" aria-hidden="true"></i>
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+    <i class="fa fa-font-awesome" aria-hidden="true"></i>
+    <i class="fa fa-html5" aria-hidden="true"></i>
+    <i class="fa fa-css3" aria-hidden="true"></i>
+    <i class="fa fa-code" aria-hidden="true"></i>
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <i class="fa fa-behance" aria-hidden="true"></i>
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+    <i class="fa fa-font-awesome" aria-hidden="true"></i> 
+    <i class="fa fa-html5" aria-hidden="true"></i>
+    <i class="fa fa-css3" aria-hidden="true"></i>
+    <i class="fa fa-code" aria-hidden="true"></i>
+    <i class="fa fa-github" aria-hidden="true"></i>
+    <i class="fa fa-behance" aria-hidden="true"></i>
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+    <i class="fa fa-font-awesome" aria-hidden="true"></i>
+  </div>
+</div>
+
+ </section>
+    <!--Project section end-->
+
+
+
+    <!-- timeline section start -->
+  <section class="bg-gray-950 text-white" id="TimeStamp">
+
+     <div class="timeline pt-[50px] pb-[50px]">
+
+      <div class="checkpoint">
+        <div>
+          <h2> Class X - CBSE Board</h2>
+          <small>2019</small>
+          <p>N. V. chinmaya vidyalaya</p>
+        </div>
+      </div>
+      <div class="checkpoint">
+        <div>
+          <h2>Diploma - MSBTE</h2>
+          <small>2019-2022</small>
+          <p>Computer Science and engineering</p>
+        </div>
+      </div>
+      <div class="checkpoint">
+        <div>
+          <h2> Internship Program</h2>
+          <small>Oct-Dec 2023</small>
+          <p>Data analytic From The Website Maker</p>
+        </div>
+      </div>
+      <div class="checkpoint">
+        <div>
+          <h2> Bachelor's degree</h2>
+          <small>2022-2025</small>
+          <p>Computer Science and engineering</p>
+        </div>
+      </div>
+      
+      <!-- <div class="checkpoint">
+        <div>
+          <h2> HighSchool</h2>
+          <small>2009-2023</small>
+          <p>hello my self mritunjau tiwari</p>
+        </div>
+      </div> -->
+     </div>
+  </section>
+    <!-- timeline section end -->
+
+
+    <!-- Contact section start -->
+     <section class="Contactform1 sm:h-[100vh] relative" id="ContactForm">
+
+      <h1 class="flex justify-center items-center mt-24 pt-24 sm:text-5xl text-2xl">Let’s Get in touch !</h1>
+      <div class="hidden sm:block">
+      <i class="fa fa-cog nut1" aria-hidden="true"></i>
+      <i class="fa fa-cog nut2" aria-hidden="true"></i>
+      </div>
+      <div class="isolate px-6 pb-24 sm:pb-32 lg:px-8">
+
+        <form action="https://formsubmit.co/swapnilmali.lv@gmail.com
+        " method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+        <input type="hidden" name="_subject" value="New Contact Form Submission">
+        <input type="hidden" name="_captcha" value="false">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+            <div>
+              <label for="first-name" class="block text-sm/6 font-semibold text-gray-900">First name</label>
+              <div class="mt-2.5">
+                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md px-3.5 py-2 text-base text-gray-900 border bg-[#f4efe4] border-black placeholder:text-gray-200 focus:outline-none focus:bg-[#E4E9F4]">
+              </div>
+            </div>
+            <div>
+              <label for="last-name" class="block text-sm/6 font-semibold text-gray-900">Last name</label>
+              <div class="mt-2.5">
+                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md px-3.5 py-2 text-base text-gray-900 border bg-[#f4efe4] border-black placeholder:text-gray-200 focus:outline-none focus:bg-[#E4E9F4]">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="company" class="block text-sm/6 font-semibold text-gray-900">Company</label>
+              <div class="mt-2.5">
+                <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md px-3.5 py-2 text-base text-gray-900 border bg-[#f4efe4] border-black placeholder:text-gray-200 focus:outline-none focus:bg-[#E4E9F4]">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="email" class="block text-sm/6 font-semibold text-gray-900">Email</label>
+              <div class="mt-2.5">
+                <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md px-3.5 py-2 text-base text-gray-900 border bg-[#f4efe4] border-black placeholder:text-gray-200 focus:outline-none focus:bg-[#E4E9F4]">
+              </div>
+            </div>
+      
+            <div class="sm:col-span-2">
+              <label for="message" class="block text-sm/6 font-semibold text-gray-900">Message</label>
+              <div class="mt-2.5">
+                <textarea name="message" id="message" rows="4" class="block w-full rounded-md px-3.5 py-2 text-base text-gray-900 border bg-[#f4efe4] border-black placeholder:text-gray-200 focus:outline-none focus:bg-[#E4E9F4]"></textarea>
+              </div>
+            </div>
+      
+          </div>
+          <div class="mt-10">
+            <button type="submit" class="block w-full rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white bg-[#ff623f] border hover:bg-[#FE2E00]">Let's Connect !</button>
+          </div>
+        </form>
+        <div class="flex justify-center">
+          or
+        </div>
+        <div class="sm:flex sm:justify-center gap-3">
+          <div><i class="fa fa-envelope-o mr-3" aria-hidden="true"></i>swapnilmali.lv@gmail.com</div>
+          <div><i class="fa fa-phone mr-3" aria-hidden="true"></i>+91 8999210405</div>
+        </div>
+      </div>  
+
+      
+     </section>
+    <!-- Contact section end -->
+
+     
+
+<footer class="bg-gray-950 text-white">
+
+  <div class="flex justify-center items-center flex-col py-14">
+    <div class="flex justify-center items-center gap-4">
+      <img class=" h-14" src="images/logo.svg" alt="">
+      <h1 class="text-3xl mt-1">Swapnil Mali</h1>
+    </div>
+    
+    <div>
+      <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200">
+      <a href="#Home" class="hover:text-[#ff623f] duration-200 ease-in-out"><li>Home</li></a>
+      <a href="#About" class="hover:text-[#41d83f] duration-200 ease-in-out"><li>About me</li></a>
+      <a href="#Projects" class="hover:text-[#3F7CFF] duration-200 ease-in-out"><li>Projects</li></a>
+      <a href="#TimeStamp" class="hover:text-[#41d83f] duration-200 ease-in-out"><li>TimeLine</li></a>
+      <a href="#ContactForm" class="hover:text-[#3FDCFF] duration-200 ease-in-out"><li>Contact</li></a>
+      </ul>
+    </div>
+
+    <div>
+      <hr class="h-[2px] bg-gray-50 border-0 opacity-60 rounded-full">
+      </div>
+
+    <div class="mx-2 sm:mx-0">
+      <p class="mt-1">Let’s connect and make something amazing together!</p>
+    </div>
+
+    <div class="flex space-x-10 justify-center items-center my-14">
+      <i class="fa fa-facebook text-xl hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i>
+      <i class="fa fa-linkedin hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i>
+      <i class="fa fa-instagram text-xl hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i>
+      <i class="fa fa-behance text-xl hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i>
+      <i class="fa fa-github text-xl hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i>
+    </div>
+
+    <div><h2>&copy Swapnil Mali, All rights reserved</h2></div>
+  </div>
+
+  
+</footer>
+
+  </body>
+</html>
