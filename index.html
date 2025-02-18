@@ -21,7 +21,7 @@
   <header>
 
 
-    <nav class="flex justify-between items-center mx-4 mt-4 bg-white shadow-xl rounded-lg z-50 fixed w-[93%] sm:w-[98%]">
+    <nav class="flex absolute justify-between items-center mx-4 mt-4 bg-white shadow-xl rounded-lg z-50 w-[93%] sm:w-[98%]">
       <a href="#Home">
       <div class="rounded-2xl p-2">
         <img src="images/logo.svg" alt="" />
@@ -70,9 +70,37 @@
 
 
     <!-- Home section start -->
-    <section class="Home" id="Home"> <!--height is set as 100vh-->
+    <section class="Home relative" id="Home"> <!--height is set as 100vh-->
 
-      <div class="absolute bottom-0 w-full">
+      <div class="bottom-0 w-full sm:block md:block hidden">
+        <div class="w-fit absolute right-[22%] bottom-0">
+        <img class="object-cover sm:h-[95vh] " src="images/homepic4.png" alt="">
+        </div>
+
+        <div class="w-full mx-8 mb-2">
+        <img class="scroll-down-downloadcv-2025-buttons-animation absolute bottom-32 h-14" src="images/scroll down.svg" alt="">
+          
+        <a href="CV/Swapnil mali resume.pdf" download=""><button type="button" class="scroll-down-downloadcv-2025-buttons-animation text-gray-900  border-4 border-gray-950 focus:outline-none font-semibold rounded-[50px] text-2xl px-5 py-2.5 absolute right-56 bottom-32 hover:bg-black hover:text-white hover:rotate-12 duration-150">Download CV</button></a>
+        
+        <a href="#ContactForm"><button type="button" class="scroll-down-downloadcv-2025-buttons-animation text-gray-900  border-4 border-gray-950 focus:outline-none font-semibold rounded-[50px] text-2xl px-5 py-2.5 absolute bottom-32 right-10 hover:bg-black hover:text-white hover:rotate-12 duration-150">Hire me!</button></a>
+        </div>
+        
+
+        
+        <div class="slider001 absolute inset-0 -z-10">
+          <div class="slider-items w-screen">
+            <img class="object-none h-[500px]" src="images/Div.svg" alt="" />
+            <img class="object-none h-[500px]" src="images/Div.svg" alt="" />
+            <img class="object-none h-[500px]" src="images/Div.svg" alt="" />
+            <img class="object-none h-[500px]" src="images/Div.svg" alt="" />
+            <img class="object-none h-[500px]" src="images/Div.svg" alt="" />
+            <img class="object-none h-[500px]" src="images/Div.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+<!-- mobile view -->
+      <div class="absolute bottom-0 w-full sm:hidden md:hidden">
         <div class="max-w-fit mr-auto ml-auto">
         <img class="object-cover sm:h-[90vh] h-[70vh]" src="images/homepic4.png" alt="">
         </div>
@@ -81,10 +109,10 @@
           <img class="scroll-down-downloadcv-2025-buttons-animation" src="images/scroll down.svg" alt=""></div>
 
         <div class="bg-[#E4E9F4] sm:col-span-9 sm:justify-end flex sm:items-center p-3">
-          <a href="CV/Swapnil mali resume.pdf" download=""><button type="button" class="scroll-down-downloadcv-2025-buttons-animation text-gray-900 bg-white border border-gray-400 focus:outline-none hover:bg-gray-100 font-medium rounded-xl text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 sm:mr-5">Download CV</button></a></div>
+          <a href="CV/Swapnil mali resume.pdf" download=""><button type="button" class="scroll-down-downloadcv-2025-buttons-animation text-gray-900 border-4 border-gray-950  font-semibold rounded-3xl text-xl px-5 py-2.5 sm:mr-5">Download CV</button></a></div>
 
         <div class="bg-[#E4E9F4] sm:col-span-1 flex sm:justify-center sm:items-center p-2">
-          <a href="#ContactForm"><button type="button" class="scroll-down-downloadcv-2025-buttons-animation text-gray-900 bg-white border border-gray-400 focus:outline-none hover:bg-gray-100 font-medium rounded-xl text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 ml-1">Hire me!</button></a></div>
+          <a href="#ContactForm"><button type="button" class="scroll-down-downloadcv-2025-buttons-animation text-gray-900 border-4 border-gray-950  font-semibold rounded-3xl text-xl px-5 py-2.5 ml-1">Hire me!</button></a></div>
       
       </div>
         
@@ -104,35 +132,55 @@
 
 
     <!-- about sectio start -->
-     <section class="about h-auto" id="About">
-      <div class="grid grid-cols-1 sm:grid-cols-12 gap-1 m-0 sm:h-[100vh]">
-        <div class="min-h-[100px] bg-gray-950 sm:col-span-3">
-          <p class="text-white flex justify-center items-center m-6 sm:mt-52 font-extrabold text-4xl">About</p>
+    <section class="sm:block md:block hidden relative h-[100vh] bg-black text-slate-100 pt-12" id="About">
+      
+        <div class="absolute top-1 left-8 z-20 d3d-icons-left-to-right">
+          <img class="h-[300px] w-[300px] object-cover" src="images/3d/vecteezy_3d-mug-icon_46634931.png" alt="">
         </div>
-        <div class="min-h-[100px] bg-gray-950 sm:col-span-9">
-          <p class="text-white flex m-6 sm:mt-52">
-            Swapnil Mali, I’m a passionate Computer Science and Engineering student at Amravati University (2022-2025) with a strong foundation in programming, web development, and UI/UX design. I have hands-on experience working with HTML5, CSS3, Tailwind CSS, Bootstrap, JavaScript, MongoDB, and SQL, along with expertise in Figma and Adobe XD to create intuitive and user-friendly designs.</p>
-            <p class="text-white flex m-6">With a keen eye for detail and a creative mindset, I love building seamless digital experiences. I'm always eager to learn, innovate, and contribute to impactful projects in web development, UI/UX design, and software engineering</p> 
-            <p class="text-white flex m-6">Let’s connect and make something amazing together!</p>
-            
-            <div class="github-and-behance-button flex">
-            <button type="button" class="text-white p-2 m-6 border border-white rounded-lg flex justify-center items-center hover:bg-gray-800 hover:scale-110 duration-200 ease-in-out"><img class="mr-1" src="images/GithubIcon.svg" alt="">Github</button>
-            <a href="https://www.behance.net/swapnilmali7"><button type="button" class="text-white p-2 m-6 border border-white rounded-lg flex justify-center items-center hover:bg-gray-800 hover:scale-110 duration-200 ease-in-out"><img class="mr-1" src="images/BehanceIcon.svg" alt="">behance</button></a>
-            </div>
+        <div class="absolute top-[-100px] right-[-100px] z-20 d3d-icons-right-to-left">
+          <img class="h-[400px] w-[400px] object-contain" src="images/3d/vecteezy_3d-vibrant-abstract-fluid-element-with-transparent-background_52782758.png" alt="">
+        </div>
+        <div class="absolute bottom-4 left-22 z-20 d3d-icons-left-to-right">
+          <img class="h-[300px] w-[300px] object-cover" src="images/3d/vecteezy_rocket-for-business-startup-pastel-color-3d-render_39324444.png" alt="">
+        </div>
+        <div class="absolute bottom-56 right-11 z-20 d3d-icons-right-to-left">
+          <img class="h-[300px] w-[300px] object-cover" src="images/3d/vecteezy_3d-render-kid-toy-baseball-for-creative-play-transparent_49539793.png" alt="">
+        </div>
+      
+        <div class="absolute flex items-center flex-col pt-28">
+        
+          <h1 class="aboutme-text font-extrabold text-[150px]">ABOUT ME</h1>
+        
+          <span class="about-me-content flex justify-center text-2xl my-11 text-center mx-[400px]">Swapnil Mali, I’m a passionate Computer Science and Engineering student at Amravati University (2022-2025) with a strong foundation in programming, web development, and UI/UX design. I have hands-on experience working with HTML5, CSS3, Tailwind CSS, Bootstrap, JavaScript, MongoDB, and SQL, along with expertise in Figma and Adobe XD to create intuitive and user-friendly designs. <br>
+          With a keen eye for detail and a creative mindset, I love building seamless digital experiences. I'm always eager to learn, innovate, and contribute to impactful projects in web development, UI/UX design, and software engineering
+          <br>
+          Let’s connect and make something amazing together!
+          </span>
+          <a href="#ContactForm"><button class="contact-button-1 contact-btn-animation text-xl font-semibold hover:-rotate-12 duration-150 ease-in-out border-2 border-[#bd34f2] hover:border-slate-300">CONTACT ME</button></a>
+        </div>
+    </section>
 
-        </div>
-      </div>
-  </section>
+    <!-- mobile veiw -->
+     <section class="sm:hidden md:hidden bg-black text-slate-100 h-[100vh] rounded-t-[50px]" id="About">
+      <div class="flex justify-center mt-12 pt-12">
+        <h1 class="aboutme-text font-extrabold text-[50px]">ABOUT ME</h1></div>
+        <span class="about-me-content mt-7 flex justify-center text-center">Swapnil Mali, I’m a passionate Computer Science and Engineering student at Amravati University (2022-2025) with a strong foundation in programming, web development, and UI/UX design. I have hands-on experience working with HTML5, CSS3, Tailwind CSS, Bootstrap, JavaScript, MongoDB, and SQL, along with expertise in Figma and Adobe XD to create intuitive and user-friendly designs. <br>
+        With a keen eye for detail and a creative mindset, I love building seamless digital experiences. I'm always eager to learn, innovate, and contribute to impactful projects in web development, UI/UX design, and software engineering
+        <br>Let’s connect and make something amazing together!</span>
+        <div class="flex justify-center mt-12">
+          <a href="#ContactForm"><button class="contact-button-1-mobile text-xl font-semibold hover:-rotate-12 duration-150 ease-in-out border-2 border-[#bd34f2] hover:border-slate-300 mobile-view-opacity-and-scale-animation">CONTACT ME</button></a></div>
+      </section>
+     
     <!-- about section end -->
 
 
 
     <!--Project section start-->
 
-  <section class="project h-auto" id="Projects">
-   
+  <section class="project h-auto bg-black" id="Projects">
+   <div class="bg-white sm:rounded-[100px] rounded-[80px] pt-11">
     <div class="scroll-element sm:block md:block hidden">
-    <div class="scroll-element-box m-8">
+    <div class="scroll-element-box mx-8">
       <div class="scroll-text"><p>&#128208 Super &#x1F525 HTML &#128050 CSS &#128640 JavaScript &#128208 UI/UX &#128187 Tailwind </p></div>
     </div>
     </div>
@@ -230,7 +278,7 @@
   <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
   <div class="flex-grow"><div class="font-medium text-lg ml-4">Queen Elara - UX design, Landing Page development</div></div>
   <div class="">
-    <button class="bg-slate-100  border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+    <a href="https://www.behance.net/swapnilmali7"><button class="bg-slate-100  border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button></a>
   </div>
   <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/1.jpg"></img>
 </div>
@@ -241,7 +289,7 @@
   <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
   <div class="flex-grow"><div class="font-medium text-lg ml-4">Sectret Window - Concept landing Page</div></div>
   <div class="">
-    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+    <a href="https://www.behance.net/swapnilmali7"><button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button></a>
   </div>
   <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/2.jpg"></img>
 </div>
@@ -252,7 +300,7 @@
   <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
   <div class="flex-grow"><div class="font-medium text-lg ml-4">404 error - UX design, Landing Page development</div></div>
   <div class="">
-    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+    <a href="https://www.behance.net/swapnilmali7"><button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button></a>
   </div>
   <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/3.jpg"></img>
 </div>
@@ -263,7 +311,7 @@
   <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
   <div class="flex-grow"><div class="font-medium text-lg ml-4">Anime Streaming - Concept web development</div></div>
   <div class="">
-    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+    <a href="https://www.behance.net/swapnilmali7"><button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button></a>
   </div>
   <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/4.jpg"></img>
 </div>
@@ -274,7 +322,7 @@
   <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
   <div class="flex-grow"><div class="font-medium text-lg ml-4">PortFolio - Concept web development</div></div>
   <div class="">
-    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+    <a href="https://www.behance.net/swapnilmali7"><button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button></a>
   </div>
   <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/5.jpg"></img>
 </div>
@@ -285,7 +333,7 @@
   <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
   <div class="flex-grow"><div class="font-medium text-lg ml-4">3D Car Concept - UX design, 3D modeling</div></div>
   <div class="">
-    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+    <a href="https://www.behance.net/swapnilmali7"><button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button></a>
   </div>
   <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/6.jpg"></img>
 </div>
@@ -296,7 +344,7 @@
   <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
   <div class="flex-grow"><div class="font-medium text-lg ml-4">Space Cat - Concept web development</div></div>
   <div class="">
-    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+    <a href="https://www.behance.net/swapnilmali7"><button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button></a>
   </div>
   <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/7.jpg"></img>
 </div>
@@ -307,7 +355,7 @@
   <div class="border-l-[1px] border-gray-700 border-opacity-60 rounded-lg h-8 ml-3"></div>
   <div class="flex-grow"><div class="font-medium text-lg ml-4">Maison Aura - UX design, Landing Page development</div></div>
   <div class="">
-    <button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button>
+    <a href="https://www.behance.net/swapnilmali7"><button class="bg-slate-100 border border-gray-700 rounded-lg text-black text-sm sm:w-[200px] sm:h-[30px] h-[30px] w-[80px]" type="button">DETAILS</button></a>
   </div>
   <img class="project-tooltip-popup sm:ml-[20%] h-[300px] w-[300px] rounded-3xl p-1 bg-gray-800" src="images/projectsimages/8.jpg"></img>
 </div>
@@ -315,7 +363,7 @@
 
 <!-- project div for mobile view -->
  <div class="sm:hidden">
-  <div class="m-4 grid grid-cols-2 gap-4">
+  <div class="m-2 grid grid-cols-2 gap-2">
     <div class="project-grid-animation"><img class="rounded-lg" src="images/projectsimages/1.jpg" alt=""></div>
     <div class="project-grid-animation"><img class="rounded-lg" src="images/projectsimages/2.jpg" alt=""></div>
     <div class="project-grid-animation"><img class="rounded-lg" src="images/projectsimages/3.jpg" alt=""></div>
@@ -323,8 +371,9 @@
     <div class="project-grid-animation"><img class="rounded-lg" src="images/projectsimages/5.jpg" alt=""></div>
     <div class="project-grid-animation"><img class="rounded-lg" src="images/projectsimages/6.jpg" alt=""></div>
   </div>
-  <div class="project-grid-animation flex justify-center items-center"> 
-  <a href="https://www.behance.net/swapnilmali7"><button class="px-2 py-2 bg-slate-100 border border-gray-700 rounded-lg text-black text-sm">More Projects</button></a></div>
+  <div class="mt-10 mx-2">
+    <a href="https://www.behance.net/swapnilmali7"><button type="submit" class="block w-full rounded-full px-3.5 py-2.5 text-center text-sm text-purple-700 hover:text-black font-semibold border-2 border-purple-700 hover:border-black">More Projects</button></a>
+  </div>
  </div>
 
  <div class="py-24 sm:py-32">
@@ -332,93 +381,54 @@
     <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
       <div class="mx-auto flex max-w-xs flex-col gap-y-4">
         <dt class="text-base/7 text-gray-600">Projects Completed</dt>
-        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl project-skillset-hours-animation">21 + Projects</dd>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl project-skillset-hours-animation hover:text-[#41d83f] duration-500 ease-in-out">21 + Projects</dd>
       </div>
       <div class="mx-auto flex max-w-xs flex-col gap-y-4">
         <dt class="text-base/7 text-gray-600">Learned Skillsets</dt>
-        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl project-skillset-hours-animation">9 + Skillsets</dd>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl project-skillset-hours-animation hover:text-[#3F7CFF] duration-500 ease-in-out">9 + Skillsets</dd>
       </div>
       <div class="mx-auto flex max-w-xs flex-col gap-y-4">
         <dt class="text-base/7 text-gray-600">Working experience</dt>
-        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl project-skillset-hours-animation">400 + hours</dd>
+        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl project-skillset-hours-animation hover:text-[#ff623f] duration-500 ease-in-out">400 + hours</dd>
       </div>
     </dl>
   </div>
 </div>
-
-<div class="mb-9 mt-20 sm:block hidden">   
-  <div class="flex items-center justify-between gap-20 opacity-[20%] demo-animation-for-icon-slider-l-t-r text-5xl">
-    <i class="fa fa-html5" aria-hidden="true"></i>
-    <i class="fa fa-css3" aria-hidden="true"></i>
-    <i class="fa fa-code" aria-hidden="true"></i>
-    <i class="fa fa-github" aria-hidden="true"></i>
-    <i class="fa fa-behance" aria-hidden="true"></i>
-    <i class="fa fa-linkedin" aria-hidden="true"></i>
-    <i class="fa fa-font-awesome" aria-hidden="true"></i>
-    <i class="fa fa-html5" aria-hidden="true"></i>
-    <i class="fa fa-css3" aria-hidden="true"></i>
-    <i class="fa fa-code" aria-hidden="true"></i>
-    <i class="fa fa-github" aria-hidden="true"></i>
-    <i class="fa fa-behance" aria-hidden="true"></i>
-    <i class="fa fa-linkedin" aria-hidden="true"></i>
-    <i class="fa fa-font-awesome" aria-hidden="true"></i>
-    <i class="fa fa-html5" aria-hidden="true"></i>
-    <i class="fa fa-css3" aria-hidden="true"></i>
-    <i class="fa fa-code" aria-hidden="true"></i>
-    <i class="fa fa-github" aria-hidden="true"></i>
-    <i class="fa fa-behance" aria-hidden="true"></i>
-    <i class="fa fa-linkedin" aria-hidden="true"></i>
-    <i class="fa fa-font-awesome" aria-hidden="true"></i> 
-    <i class="fa fa-html5" aria-hidden="true"></i>
-    <i class="fa fa-css3" aria-hidden="true"></i>
-    <i class="fa fa-code" aria-hidden="true"></i>
-    <i class="fa fa-github" aria-hidden="true"></i>
-    <i class="fa fa-behance" aria-hidden="true"></i>
-    <i class="fa fa-linkedin" aria-hidden="true"></i>
-    <i class="fa fa-font-awesome" aria-hidden="true"></i>
-  </div>
 </div>
-<div class="mb-9 sm:block hidden">
-  <div class="flex items-center justify-between gap-20 opacity-[20%] demo-animation-for-icon-slider-r-t-l text-5xl">
-    <i class="fa fa-html5" aria-hidden="true"></i>
-    <i class="fa fa-css3" aria-hidden="true"></i>
-    <i class="fa fa-code" aria-hidden="true"></i>
-    <i class="fa fa-github" aria-hidden="true"></i>
-    <i class="fa fa-behance" aria-hidden="true"></i>
-    <i class="fa fa-linkedin" aria-hidden="true"></i>
-    <i class="fa fa-font-awesome" aria-hidden="true"></i>
-    <i class="fa fa-html5" aria-hidden="true"></i>
-    <i class="fa fa-css3" aria-hidden="true"></i>
-    <i class="fa fa-code" aria-hidden="true"></i>
-    <i class="fa fa-github" aria-hidden="true"></i>
-    <i class="fa fa-behance" aria-hidden="true"></i>
-    <i class="fa fa-linkedin" aria-hidden="true"></i>
-    <i class="fa fa-font-awesome" aria-hidden="true"></i>
-    <i class="fa fa-html5" aria-hidden="true"></i>
-    <i class="fa fa-css3" aria-hidden="true"></i>
-    <i class="fa fa-code" aria-hidden="true"></i>
-    <i class="fa fa-github" aria-hidden="true"></i>
-    <i class="fa fa-behance" aria-hidden="true"></i>
-    <i class="fa fa-linkedin" aria-hidden="true"></i>
-    <i class="fa fa-font-awesome" aria-hidden="true"></i> 
-    <i class="fa fa-html5" aria-hidden="true"></i>
-    <i class="fa fa-css3" aria-hidden="true"></i>
-    <i class="fa fa-code" aria-hidden="true"></i>
-    <i class="fa fa-github" aria-hidden="true"></i>
-    <i class="fa fa-behance" aria-hidden="true"></i>
-    <i class="fa fa-linkedin" aria-hidden="true"></i>
-    <i class="fa fa-font-awesome" aria-hidden="true"></i>
-  </div>
-</div>
-
  </section>
     <!--Project section end-->
 
 
+    <!-- live projects section start -->
+    <section class="sm:block md:block hidden w-full pb-48 bg-black text-slate-50">
+      <div class="flex justify-center pt-24">
+        <h1 class="font-extrabold text-[150px] opacity-0-1-animation">LIVE PROJECTS</h1>
+      </div>
+      <div class="px-56 pt-20">
+      <img class="project-container-1 pt-5" src="images/Group 1.png" alt="">
+      <img class="project-container-2 pt-5" src="images/Group 2.png" alt="">
+      <img class="project-container-3 pt-5 " src="images/Group 3.png" alt="">
+      </div>
+    </section>
+    <!-- mobile view -->
+     <section class="sm:hidden md:hidden bg-black pb-48 text-slate-50">
+      <div class="flex justify-center pt-24">
+        <h1 class="font-extrabold text-[50px] opacity-0-1-animation">LIVE PROJECTS</h1>
+      </div>
+      <div class=" mx-2">
+        <img class="project-container-1 pt-5" src="images/Group 1.png" alt="">
+        <img class="project-container-2 pt-5" src="images/Group 2.png" alt="">
+        <img class="project-container-3 pt-5" src="images/Group 3.png" alt="">
+        </div>
+     </section>
+    <!-- live projects section end -->
+
 
     <!-- timeline section start -->
-  <section class="bg-gray-950 text-white" id="TimeStamp">
-
+  <section class="bg-black text-white" id="TimeStamp">
+    <div class="flex justify-center">
+    <h1 class="aboutme-text font-extrabold sm:text-[150px] md:text-[150px] text-[50px]">TIMELINE</h1>
+    </div>
      <div class="timeline pt-[50px] pb-[50px]">
 
       <div class="checkpoint">
@@ -463,13 +473,115 @@
 
 
     <!-- Contact section start -->
-     <section class="Contactform1 sm:h-[100vh] relative" id="ContactForm">
+<section class="bg-black" id="ContactForm">
+    <section class="sm:block md:block hidden relative h-[100vh] bg-white text-black rounded-[100px]">
+      
+      <div class="absolute top-[-200px] right-[-200px] z-20 d3d-icons-right-to-left">
+        <img class="h-[500px] w-[500px] object-contain" src="images/3d/lightning.png" alt="">
+      </div>
+      <div class="absolute bottom-4 left-22 z-20 d3d-icons-left-to-right">
+        <img class="h-[500px] w-[500px] object-cover" src="images/3d/message-3d2.png" alt="">
+      </div>
+      
+   
+    <div class="flex justify-center items-center h-full gap-48">
+      <div class="w-96">
+        <h1 class="font-extrabold text-[100px] text-left leading-none mb-7 Get-in-touch-animation">LET'S GET IN TOUCH</h1>
+        <a href="" class="text-4xl underline Get-in-touch-animation">swapnilmali.lv@gmail.com</a>
+      </div>
+      <div>
+        <form action="https://formsubmit.co/swapnilmali.lv@gmail.com" method="POST" class="mx-auto max-w-xl">
+          <input type="hidden" name="_subject" value="New Contact Form Submission">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+        
+            
+            <div class="mt-2.5 sm:col-span-2">
+              <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full px-3.5 py-2 text-base text-gray-900 border-b-2 bg-white  border-gray-400 placeholder:text-gray-900 focus:outline-none" placeholder="Name">
+            </div>
+          
+          
+          <div class="">
+            
+            <div class="mt-2.5">
+              <input type="text" name="company" id="company" autocomplete="organization" class="block w-full px-3.5 py-2 text-base text-gray-900 border-b-2 bg-white border-gray-400 placeholder:text-gray-900 focus:outline-none" placeholder="Subject">
+            </div>
+          </div>
+          <div class="">
+            
+            <div class="mt-2.5">
+              <input type="email" name="email" id="email" autocomplete="email" class="block w-full px-3.5 py-2 text-base text-gray-900 border-b-2 bg-white border-gray-400 placeholder:text-gray-900 focus:outline-none" placeholder="Email">
+            </div>
+          </div>
+    
+          <div class="sm:col-span-2">
+            
+            <div class="mt-2.5">
+              <textarea name="message" id="message" rows="4" class="block w-full px-3.5 py-2 text-base text-gray-900 border-b-2 bg-white border-gray-400 placeholder:text-gray-900 focus:outline-none" placeholder="Message"></textarea>
+            </div>
+          </div>
+    
+        </div>
+        <div class="mt-10">
+          <button type="submit" class="block w-full rounded-full px-3.5 py-2.5 text-center text-sm text-purple-700 hover:text-black font-semibold border-2 border-purple-700 hover:border-black">Send</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </section>
+  <!-- mobile view -->
+   <section class="sm:hidden md:hidden h-[100vh] bg-white text-black">
+    <div class="flex justify-center pt-8">
+      <h1 class="font-extrabold text-[50px] text-center leading-none mb-7 Get-in-touch-animation">LET'S GET IN TOUCH</h1>
+    </div>
+    <div class="mx-3">
+      <form action="https://formsubmit.co/swapnilmali.lv@gmail.com" method="POST" class="mx-auto max-w-xl">
+        <input type="hidden" name="_subject" value="New Contact Form Submission">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+      
+          
+          <div class="mt-2.5 sm:col-span-2">
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full px-3.5 py-2 text-base text-gray-900 border-b-2 bg-white  border-gray-400 placeholder:text-gray-900 focus:outline-none" placeholder="Name">
+          </div>
+        
+        
+        <div class="">
+          
+          <div class="mt-2.5">
+            <input type="text" name="company" id="company" autocomplete="organization" class="block w-full px-3.5 py-2 text-base text-gray-900 border-b-2 bg-white border-gray-400 placeholder:text-gray-900 focus:outline-none" placeholder="Subject">
+          </div>
+        </div>
+        <div class="">
+          
+          <div class="mt-2.5">
+            <input type="email" name="email" id="email" autocomplete="email" class="block w-full px-3.5 py-2 text-base text-gray-900 border-b-2 bg-white border-gray-400 placeholder:text-gray-900 focus:outline-none" placeholder="Email">
+          </div>
+        </div>
+  
+        <div class="sm:col-span-2">
+          
+          <div class="mt-2.5">
+            <textarea name="message" id="message" rows="4" class="block w-full px-3.5 py-2 text-base text-gray-900 border-b-2 bg-white border-gray-400 placeholder:text-gray-900 focus:outline-none" placeholder="Message"></textarea>
+          </div>
+        </div>
+  
+      </div>
+      <div class="mt-10">
+        <button type="submit" class="block w-full rounded-full px-3.5 py-2.5 text-center text-sm text-purple-700 hover:text-black font-semibold border-2 border-purple-700 hover:border-black">Send</button>
+      </div>
+    </form>
+    </div>
+    <div class="flex justify-center mt-5">
+    <a href="" class="text-2xl underline text-center">swapnilmali.lv@gmail.com</a>
+    </div>
+   </section>
+  </section>
+
+     <!-- <section class="Contactform1 sm:h-[100vh] relative" id="ContactForm">
 
       <h1 class="flex justify-center items-center mt-24 pt-24 sm:text-5xl text-2xl">Let’s Get in touch !</h1>
-      <div class="hidden sm:block">
-      <i class="fa fa-cog nut1" aria-hidden="true"></i>
-      <i class="fa fa-cog nut2" aria-hidden="true"></i>
-      </div>
+      
       <div class="isolate px-6 pb-24 sm:pb-32 lg:px-8">
 
         <form action="https://formsubmit.co/swapnilmali.lv@gmail.com
@@ -524,17 +636,17 @@
       </div>  
 
       
-     </section>
+     </section> -->
     <!-- Contact section end -->
 
      
 
-<footer class="bg-gray-950 text-white">
+<footer class="bg-black text-white">
 
   <div class="flex justify-center items-center flex-col py-14">
     <div class="flex justify-center items-center gap-4">
       <img class=" h-14" src="images/logo.svg" alt="">
-      <h1 class="text-3xl mt-1">Swapnil Mali</h1>
+      <a href="#Home"><h1 class="text-3xl mt-1 hover:text-[#3F7CFF] duration-150 ease-in-out">Swapnil Mali</h1></a>
     </div>
     
     <div>
@@ -551,21 +663,47 @@
       <hr class="h-[2px] bg-gray-50 border-0 opacity-60 rounded-full">
       </div>
 
-    <div class="mx-2 sm:mx-0">
-      <p class="mt-1">Let’s connect and make something amazing together!</p>
+    <div class="mx-4 sm:mx-0">
+      <p class="mt-1 text-justify">Let’s connect and make something amazing together!</p>
     </div>
 
     <div class="flex space-x-10 justify-center items-center my-14">
-      <i class="fa fa-facebook text-xl hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i>
-      <i class="fa fa-linkedin hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i>
-      <i class="fa fa-instagram text-xl hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i>
-      <i class="fa fa-behance text-xl hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i>
-      <i class="fa fa-github text-xl hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i>
+      <a href="https://www.facebook.com/swapnil.mali.35912"><i class="fa fa-facebook text-xl hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/swapnil-mali-715818258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/swapnil_malii?igsh=aGt6OGdhcnNxYnNi"><i class="fa fa-instagram text-xl hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i></a>
+      <a href="https://www.behance.net/swapnilmali7"><i class="fa fa-behance text-xl hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i></a>
+      <a href="https://github.com/Swapnilmali-lv"><i class="fa fa-github text-xl hover:text-[#ff623f] duration-200 ease-in-out" aria-hidden="true"></i></a>
     </div>
 
     <div><h2>&copy Swapnil Mali, All rights reserved</h2></div>
   </div>
 
+
+  <section class="sm:block md:block hidden">
+    <div class="flex justify-center gap-3">
+      <img src="images/footer-icons/1.svg" alt="">
+      <img src="images/footer-icons/2.svg" alt="">
+      <img src="images/footer-icons/3.svg" alt="">
+      <img src="images/footer-icons/4.svg" alt="">
+      <img src="images/footer-icons/5.svg" alt="">
+      <img src="images/footer-icons/6.svg" alt="">
+      <img src="images/footer-icons/7.svg" alt="">
+      <img src="images/footer-icons/8.svg" alt="">
+    </div>
+  </section>
+<!-- mobile view -->
+  <section class="sm:hidden md:hidden">
+    <div class="flex justify-center gap-2 mt-10">
+      <img class="w-8" src="images/footer-icons/1.svg" alt="">
+      <img class="w-8" src="images/footer-icons/2.svg" alt="">
+      <img class="w-8" src="images/footer-icons/3.svg" alt="">
+      <img class="w-8" src="images/footer-icons/4.svg" alt="">
+      <img class="w-8" src="images/footer-icons/5.svg" alt="">
+      <img class="w-8" src="images/footer-icons/6.svg" alt="">
+      <img class="w-8" src="images/footer-icons/7.svg" alt="">
+      <img class="w-8" src="images/footer-icons/8.svg" alt="">
+    </div>
+  </section>
   
 </footer>
 
