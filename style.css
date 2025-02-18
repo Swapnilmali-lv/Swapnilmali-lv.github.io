@@ -3,8 +3,10 @@ html {
 }
 body {
   background-color: #f4efe4;
+  /* background-color: #fff; */
+
   overflow-x: hidden;
-  font-family: "Fredoka", serif;
+  /* font-family: "Fredoka", serif; */
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -56,16 +58,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100%; */
-  /* margin-top: 50px; */
   width: 100%;
   overflow: hidden;
-  /* background: rgb(255, 255, 255); */
-  /* border-radius: 16px; */
-  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-  /* backdrop-filter: blur(7.4px); */
-  /* -webkit-backdrop-filter: blur(7.4px); */
-  /* border: 1px solid rgba(255, 255, 255, 0.4); */
 }
 .slider-items {
   display: flex;
@@ -73,7 +67,7 @@ body {
   align-items: center;
   gap: 20px;
   animation: scrolling 20s linear infinite;
-  opacity: 40%;
+  opacity: 60%;
 }
 @keyframes scrolling {
   0% {
@@ -89,7 +83,7 @@ body {
 .scroll-down-downloadcv-2025-buttons-animation {
   animation-name: opacity-animation-1-to-0;
   animation-timeline: view();
-  animation-range: entry 70% cover 100%;
+  animation-range: entry 90% cover 150%;
 }
 
 .Home {
@@ -103,11 +97,119 @@ body {
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.5),
-      transparent 0.6px
+      transparent 0.9px
     ),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 0.6px);
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent 0.9px);
 }
 /* about section */
+
+.d3d-icons-left-to-right {
+  animation-name: d3d-translate-left-to-right;
+  animation-timeline: view();
+  animation-range: entry 0 cover 80%;
+}
+.d3d-icons-right-to-left {
+  animation-name: d3d-translate-right-to-left;
+  animation-timeline: view();
+  animation-range: entry 0 cover 80%;
+}
+@keyframes d3d-translate-left-to-right {
+  from {
+    transform: translateX(-150px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes d3d-translate-right-to-left {
+  from {
+    transform: translateX(150px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.aboutme-text {
+  color: black;
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+  animation-name: About-me-text-animation;
+  animation-timeline: view();
+  animation-range: entry 0 cover 100%;
+}
+@keyframes About-me-text-animation {
+  from {
+    color: black;
+  }
+  to {
+    color: rgb(255, 255, 255);
+  }
+}
+.about-me-content {
+  animation-name: About-me-content-animation;
+  animation-timeline: view();
+  animation-range: entry 0 cover 60%;
+}
+@keyframes About-me-content-animation {
+  0% {
+    /* clip-path: inset(0 0 100% 0); */
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  50% {
+    /* clip-path: inset(0 0 0 0); */
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+.contact-btn-animation {
+  animation-name: Contact-btn-animation;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+@keyframes Contact-btn-animation {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.contact-button-1 {
+  background: rgb(10, 0, 8);
+  background: radial-gradient(
+    circle at top left,
+    rgba(10, 0, 8, 1) 0%,
+    rgba(10, 0, 8, 1) 23%,
+    rgba(230, 46, 161, 1) 48%,
+    rgb(179, 53, 251) 73%,
+    rgba(242, 140, 83, 1) 98%
+  );
+  /* border: 2px solid #bd34f2; */
+  border-radius: 100px;
+  padding: 20px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.contact-button-1-mobile {
+  background: rgb(10, 0, 8);
+  background: radial-gradient(
+    circle at top left,
+    rgba(10, 0, 8, 1) 0%,
+    rgba(10, 0, 8, 1) 23%,
+    rgba(230, 46, 161, 1) 48%,
+    rgb(179, 53, 251) 73%,
+    rgba(242, 140, 83, 1) 98%
+  );
+  /* border: 2px solid #bd34f2; */
+  border-radius: 100px;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
 
 .github-and-behance-button {
   animation-name: opacity-animation;
@@ -240,36 +342,36 @@ body {
     clip-path: inset(0 0 0 0);
   }
 }
-
-.demo-animation-for-icon-slider-l-t-r {
-  animation-name: dafis-animation-left-to-right;
-  animation-timeline: view();
-  animation-range: entry 0 cover 100%;
+/* live project section */
+.project-container-1 {
+  position: sticky;
+  top: 20px;
 }
-@keyframes dafis-animation-left-to-right {
+.project-container-2 {
+  position: sticky;
+  top: 70px;
+}
+.project-container-3 {
+  position: sticky;
+  top: 140px;
+}
+.opacity-0-1-animation {
+  animation-name: Opacity-0-1-animation;
+  animation-timeline: view();
+  animation-range: entry 0 cover 60%;
+}
+@keyframes Opacity-0-1-animation {
   from {
-    transform: translateX(2%);
+    opacity: 0;
   }
   to {
-    transform: translateX(-30%);
+    opacity: 1;
   }
 }
-.demo-animation-for-icon-slider-r-t-l {
-  animation-name: dafis-animation-right-to-left;
-  animation-timeline: view();
-  animation-range: entry 0 cover 100%;
-}
-@keyframes dafis-animation-right-to-left {
-  from {
-    transform: translateX(-30%);
-  }
-  to {
-    transform: translateX(2%);
-  }
-}
+/* live project ends */
 
 .timeline {
-  margin: 5em auto;
+  margin: 0em auto;
   max-width: 34.15em;
 }
 .checkpoint {
@@ -363,23 +465,17 @@ body {
   animation-range: entry 0 cover 20%;
 }
 
-.Contactform1 .fa-cog {
-  position: absolute;
-  font-size: 500px;
-  opacity: 50%;
-  animation: rotate 10s linear infinite;
+/* contact form */
+.Get-in-touch-animation {
+  animation-name: Get-in-touch-animation;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
-.Contactform1 .nut1 {
-  top: 10%;
-  left: -15rem;
-}
-.Contactform1 .nut2 {
-  bottom: 23%;
-  right: -13rem;
-  animation-direction: reverse;
-}
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
+@keyframes Get-in-touch-animation {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
   }
 }
